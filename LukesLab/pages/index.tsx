@@ -16,10 +16,12 @@ import {
 } from '@chakra-ui/react';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { Product, Dependency, WalletSection } from '../components';
-import { dependencies, products } from '../config';
+import { cw20ContractAddress, dependencies, products } from '../config';
+import { useTokenBalance } from '../hooks/useTokenBalance';
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const balance = useTokenBalance(cw20ContractAddress);
 
   return (
     <Container maxW="5xl" py={10}>
@@ -59,6 +61,7 @@ export default function Home() {
         </Heading>
       </Box>
       <WalletSection />
+      <p>Your token balance is: {balance} tokens </p>
       <Grid
         templateColumns={{
           md: 'repeat(2, 1fr)',
