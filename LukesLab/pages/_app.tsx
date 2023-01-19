@@ -28,6 +28,11 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
         assetLists={assets}
         wallets={[...keplrWallets, ...cosmostationWallets, ...leapWallets]}
         signerOptions={signerOptions}
+        endpointOptions={{
+          cosmwasmtestnet: {
+            rpc: ["https://rpc.malaga-420.cosmwasm.com/"],
+          },
+        }}
       >
         <Component {...pageProps} />
       </ChainProvider>
