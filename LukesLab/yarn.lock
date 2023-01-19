@@ -1657,14 +1657,15 @@
     "@walletconnect/client" "1.8.0"
     react-icons "4.4.0"
 
-"@cosmos-kit/react@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@cosmos-kit/react/-/react-1.0.1.tgz#3492b67031da943945e6cb9b94beb6ae980a800a"
-  integrity sha512-yLWyyYatQNuhT45Kf3z4xTw+CjktRT+57cEqSzPDOdbJxMhlZ2TCX6I0ZuVGwHFUajUERsQQq68ArpTLZTPzOQ==
+"@cosmos-kit/react@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@cosmos-kit/react/-/react-1.0.4.tgz#f674e01e3ab1a9dd763fca40a78482679759b3a7"
+  integrity sha512-izj7dn3b3DA7V+g0fkQy99MrYJAHYs9V2BUrgFx1eotrvsqOGnZ/isX/CXh2S+vJTXQCMYIBxUJ5ggjw12k8xA==
   dependencies:
     "@babel/runtime" "7.11.2"
+    "@chain-registry/types" "0.13.1"
     "@chakra-ui/react" "2.4.3"
-    "@cosmos-kit/core" "^1.0.1"
+    "@cosmos-kit/core" "^1.0.4"
     "@emotion/react" "11.10.5"
     "@emotion/styled" "11.10.5"
     "@walletconnect/types" "2.2.0"
