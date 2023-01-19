@@ -11,9 +11,14 @@ import { chains, assets } from 'chain-registry';
 
 function CreateCosmosApp({ Component, pageProps }: AppProps) {
   const signerOptions: SignerOptions = {
-    // signingStargate: (_chain: Chain) => {
-    //   return getSigningCosmosClientOptions();
-    // }
+    cosmwasm: (chain: Chain) => {
+      switch (chain.chain_name) {
+        case "cosmwasmtestnet":
+          return {
+            gasPrice: GasPrice.fromString("0.0025umlga"),
+          };
+      }
+    },
   };
 
   return (
